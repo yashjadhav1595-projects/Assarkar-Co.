@@ -1,0 +1,88 @@
+
+.services-section {
+    padding: 80px 0;
+    background: rgb(210, 208, 208);
+    text-align: center;
+    color: rgb(7, 7, 7);
+}
+
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.service-card {
+    display: block;
+    margin-top: 40px;
+    flex: 0 0 100%;
+    min-width: 100%;
+    background-color: rgb(0, 1, 44) !important; /* Ensure it overrides other styles */
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgb(4, 4, 114);
+    opacity: 0.3;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.service-card h3 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.service-card li,p {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    text-align: left;
+    list-style-type: decimal;
+}
+
+.active {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.nav-btn {
+    top: 50%;
+    background: rgba(255, 244, 244, 0.2);
+    color: rgb(3, 15, 122);
+    box-shadow: 0 10px 30px rgb(42, 42, 45);
+    border: 4px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 25px;
+    transition: 0.3s;
+    z-index: 10;  /* Bring them to the front */
+}
+
+.nav-btn:hover {
+    background: rgb(236, 236, 239);
+    text-decoration: none;
+}
+
+#prevBtn{
+    margin-right: 10px;
+}
+
+#nextBtn{
+    margin-left: 10px;
+}
+
